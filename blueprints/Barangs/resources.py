@@ -126,7 +126,7 @@ class SemuaBarang(Resource):
             list_temp.append(marshal(row, Barang.response_fields))
         
         return list_temp, 200
-    
+            
 class SemuaBarangPelapak(Resource):
     def __init__(self):
         pass
@@ -157,6 +157,7 @@ api.add_resource(EditBarang, '', '/<barang_id>')
 api.add_resource(DeleteBarang, '', '/delete/<barang_id>')
 api.add_resource(SemuaBarang, '', '/semuabarang')
 api.add_resource(SemuaBarangPelapak, '', '/barangpelapak')
+api.add_resource(Weather, '', '/weather')
         
 
 
